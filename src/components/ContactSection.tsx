@@ -1,0 +1,63 @@
+import { motion } from "framer-motion";
+import React from "react";
+import { CONTACT_TAGLINE, SOCIAL_LINKS } from "../data/data";
+import { GithubIcon, LinkedinIcon, MailIcon, WhatsAppIcon } from "./SocialIcons";
+
+const WHATSAPP_URL = `https://wa.me/${SOCIAL_LINKS.phone?.replace(/\D/g, "") ?? ""}`;
+
+const LINKS = [
+  { label: "GitHub", href: SOCIAL_LINKS.github, icon: <GithubIcon />, external: true },
+  { label: "LinkedIn", href: SOCIAL_LINKS.linkedin, icon: <LinkedinIcon />, external: true },
+  { label: "WhatsApp", href: WHATSAPP_URL, icon: <WhatsAppIcon />, external: true },
+  { label: "Email", href: SOCIAL_LINKS.email, icon: <MailIcon />, external: false },
+];
+
+const ContactSection: React.FC = () => {
+  return (
+    <section
+      id="contact"
+      className="px-6 py-24 max-w-6xl mx-auto lg:px-16 text-center"
+      aria-labelledby="contact-heading"
+    >
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
+        <p className="text-primary text-sm font-semibold tracking-widest uppercase mb-3">
+          — Get In Touch
+        </p>
+        <h2
+          id="contact-heading"
+          className="text-4xl lg:text-5xl font-black text-base-content mb-4"
+        >
+          Let's Connect
+        </h2>
+        <div className="mx-auto mb-8 w-16 h-1 bg-gradient-brand rounded-full" aria-hidden="true" />
+        <p className="text-base-content opacity-60 max-w-md mx-auto mb-12 text-lg">
+          {CONTACT_TAGLINE}
+        </p>
+
+        <div className="flex justify-center gap-4 flex-wrap" role="list">
+          {LINKS.map(({ label, href, icon, external }) => (
+            <a
+              key={label}
+              href={href}
+              target={external ? "_blank" : undefined}
+              rel={external ? "noopener noreferrer" : undefined}
+              className="flex items-center gap-3 px-6 py-3 rounded-full border border-base-300 hover:border-primary text-base-content transition-all duration-200 hover:bg-primary hover:bg-opacity-5 font-medium hover:text-accent-content"
+              role="listitem"
+              aria-label={label}
+            >
+              {icon}
+              <span>{label}</span>
+            </a>
+          ))}
+        </div>
+      </motion.div>
+    </section>
+  );
+};
+
+export default ContactSection;

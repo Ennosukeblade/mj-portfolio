@@ -1,0 +1,318 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: cupcake, bumblebee, dracula, fantasy, nord,
+    dark,
+    light,
+    synthwave,
+    retro,
+    cyberpunk,
+    valentine,
+    wireframe,
+    black,
+    luxury,
+    pastel,
+    halloween,
+    forest,
+    garden,
+    lofi,
+    dim
+}
+
+
+
+@plugin "daisyui/theme" {
+  name: "dima";
+  default: false;
+  prefersdark: false;
+  color-scheme: "dark";
+  --color-base-100: oklch(30.857% 0.023 264.149);
+  --color-base-200: oklch(28.036% 0.019 264.182);
+  --color-base-300: oklch(26.346% 0.018 262.177);
+  --color-base-content: oklch(82.901% 0.031 222.959);
+  --color-primary: oklch(86.133% 0.141 139.549);
+  --color-primary-content: oklch(17.226% 0.028 139.549);
+  --color-secondary: oklch(73.375% 0.165 35.353);
+  --color-secondary-content: oklch(14.675% 0.033 35.353);
+  --color-accent: oklch(74.229% 0.133 311.379);
+  --color-accent-content: oklch(14.845% 0.026 311.379);
+  --color-neutral: oklch(24.731% 0.02 264.094);
+  --color-neutral-content: oklch(82.901% 0.031 222.959);
+  --color-info: oklch(86.078% 0.142 206.182);
+  --color-info-content: oklch(17.215% 0.028 206.182);
+  --color-success: oklch(86.171% 0.142 166.534);
+  --color-success-content: oklch(17.234% 0.028 166.534);
+  --color-warning: oklch(86.163% 0.142 94.818);
+  --color-warning-content: oklch(17.232% 0.028 94.818);
+  --color-error: oklch(82.418% 0.099 33.756);
+  --color-error-content: oklch(16.483% 0.019 33.756);
+  --radius-selector: 1rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+
+@plugin "daisyui/theme" {
+  name: "lemonada";
+  default: false;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: oklch(98.71% 0.02 123.72);
+  --color-base-200: oklch(91.8% 0.018 123.72);
+  --color-base-300: oklch(84.89% 0.017 123.72);
+  --color-base-content: oklch(19.742% 0.004 123.72);
+  --color-primary: #009764;
+  --color-primary-content: oklch(11.784% 0.039 134.6);
+  --color-secondary: oklch(77.75% 0.196 111.09);
+  --color-secondary-content: oklch(15.55% 0.039 111.09);
+  --color-accent: oklch(85.39% 0.201 100.73);
+  --color-accent-content: oklch(17.078% 0.04 100.73);
+  --color-neutral: oklch(26% 0.051 172.552);
+  --color-neutral-content: oklch(86.196% 0.015 108.6);
+  --color-info: oklch(86.19% 0.047 224.14);
+  --color-info-content: oklch(17.238% 0.009 224.14);
+  --color-success: oklch(86.19% 0.047 157.85);
+  --color-success-content: oklch(17.238% 0.009 157.85);
+  --color-warning: oklch(86.19% 0.047 102.15);
+  --color-warning-content: oklch(17.238% 0.009 157.85);
+  --color-error: oklch(86.19% 0.047 25.85);
+  --color-error-content: oklch(17.238% 0.009 157.85);
+  --radius-selector: 1rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+
+
+@plugin "daisyui/theme" {
+  name: "silk";
+  default: false;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: oklch(97% 0.0035 67.78);
+  --color-base-200: oklch(95% 0.0081 61.42);
+  --color-base-300: oklch(90% 0.0081 61.42);
+  --color-base-content: oklch(40% 0.0081 61.42);
+  --color-primary: oklch(23.27% 0.0249 284.3);
+  --color-primary-content: oklch(94.22% 0.2505 117.44);
+  --color-secondary: oklch(23.27% 0.0249 284.3);
+  --color-secondary-content: oklch(73.92% 0.2135 50.94);
+  --color-accent: oklch(23.27% 0.0249 284.3);
+  --color-accent-content: oklch(88.92% 0.2061 189.9);
+  --color-neutral: oklch(20% 0 0);
+  --color-neutral-content: oklch(80% 0.0081 61.42);
+  --color-info: oklch(80.39% 0.1148 241.68);
+  --color-info-content: oklch(30.39% 0.1148 241.68);
+  --color-success: oklch(83.92% 0.0901 136.87);
+  --color-success-content: oklch(23.92% 0.0901 136.87);
+  --color-warning: oklch(83.92% 0.1085 80);
+  --color-warning-content: oklch(43.92% 0.1085 80);
+  --color-error: oklch(75.1% 0.1814 22.37);
+  --color-error-content: oklch(35.1% 0.1814 22.37);
+  --radius-selector: 2rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 2px;
+  --depth: 1;
+  --noise: 0;
+}
+
+
+@plugin "daisyui/theme" {
+  name: "modern-dark";
+  default: true;
+  prefersdark: true;
+  color-scheme: dark;
+
+  --color-base-100: #0f172a;
+  --color-base-200: #1e293b;
+  --color-base-300: #334155;
+  --color-base-content: #f1f5f9;
+  --color-primary: #6366f1;
+  --color-primary-content: #ffffff;
+  --color-secondary: #8b5cf6;
+  --color-secondary-content: #ffffff;
+  --color-accent: #06b6d4;
+  --color-accent-content: #ffffff;
+  --color-neutral: #334155;
+  --color-neutral-content: #f1f5f9;
+  --color-info: #38bdf8;
+  --color-info-content: #0f172a;
+  --color-success: #34d399;
+  --color-success-content: #0f172a;
+  --color-warning: #fbbf24;
+  --color-warning-content: #0f172a;
+  --color-error: #f87171;
+  --color-error-content: #0f172a;
+
+  --radius-selector: 0.5rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  --border: 1px;
+
+  --depth: 1;
+  --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+  name: "modern-light";
+  default: false;
+  prefersdark: false;
+  color-scheme: light;
+
+  --color-base-100: #ffffff;
+  --color-base-200: #f8fafc;
+  --color-base-300: #f1f5f9;
+  --color-base-content: #0f172a;
+  --color-primary: #6366f1;
+  --color-primary-content: #ffffff;
+  --color-secondary: #8b5cf6;
+  --color-secondary-content: #ffffff;
+  --color-accent: #06b6d4;
+  --color-accent-content: #ffffff;
+  --color-neutral: #e2e8f0;
+  --color-neutral-content: #1e293b;
+  --color-info: #38bdf8;
+  --color-info-content: #0f172a;
+  --color-success: #34d399;
+  --color-success-content: #0f172a;
+  --color-warning: #fbbf24;
+  --color-warning-content: #0f172a;
+  --color-error: #f87171;
+  --color-error-content: #0f172a;
+
+  --radius-selector: 0.5rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  --border: 1px;
+
+  --depth: 1;
+  --noise: 0;
+}
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  --animate-blob: blob 8s ease-in-out infinite;
+  --animate-gradient: gradient 8s ease infinite;
+
+  @keyframes blob {
+
+    0%,
+    100% {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+
+    25% {
+      border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+    }
+
+    50% {
+      border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+    }
+
+    75% {
+      border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+    }
+  }
+
+  @keyframes gradient {
+
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #6366f1 transparent;
+  }
+
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: #6366f1;
+    border-radius: 10px;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-brand {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6, #06b6d4);
+    background-size: 200%;
+    animation: gradient 8s ease infinite;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(99, 102, 241, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99, 102, 241, 0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
+  }
+}

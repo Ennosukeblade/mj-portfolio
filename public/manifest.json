@@ -1,0 +1,16 @@
+{
+  "short_name": "MJ Portfolio",
+  "name": "Mouadh Jenouiz — Portfolio",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#6366f1",
+  "background_color": "#0f172a"
+}

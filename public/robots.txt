@@ -1,0 +1,5 @@
+# Allow all crawlers
+User-agent: *
+Disallow:
+
+Sitemap: https://mj-portfolio-eosin.vercel.app/sitemap.xml
